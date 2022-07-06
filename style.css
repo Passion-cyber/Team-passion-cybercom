@@ -39,8 +39,12 @@ a {
 }
 
 .primary-btn {
-  background-image: linear-gradient(to right, hsl(136, 65%, 51%),  hsl(192, 70%, 51%) );
-  color:  hsl(220, 16%, 96%);
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: hsl(220, 16%, 96%);
   padding: 10px 15px;
   border: none;
   border-radius: 20px;
@@ -49,7 +53,11 @@ a {
 }
 
 .primary-btn:hover {
-  background-image: linear-gradient(to left,  hsl(136, 65%, 51%),  hsl(192, 70%, 51%));
+  background-image: linear-gradient(
+    to left,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
   color: hsl(233, 8%, 62%);
 }
 
@@ -61,6 +69,10 @@ header {
 #global-container {
   display: flex;
   justify-content: space-between;
+}
+
+#global-container .logo svg {
+  display: none;
 }
 
 .container ul {
@@ -257,8 +269,7 @@ header {
   justify-content: space-between;
 }
 
-#footer-section .footer-left img {
-  display: inline-block;
+#footer-section .footer-left svg {
   margin-bottom: 3rem;
 }
 
@@ -358,8 +369,11 @@ header {
 
 @media (max-width: 500px) {
   .container {
-    width: 500px;
+    max-width: 460px;
     margin: 0 auto;
+    padding-inline: auto;
+    justify-items: center;
+    align-items: center;
   }
 
   /* header section */
@@ -384,7 +398,6 @@ header {
     background-position: 10px -100px, -100px -350px;
     background-size: 300px, 800px;
   }
-
 
   .hero-right h2 {
     margin-top: 12rem;
@@ -449,7 +462,6 @@ header {
 
   .individual-articles {
     text-align: center;
-     
   }
 
   .individual-articles .shift .name {
@@ -458,13 +470,10 @@ header {
 
   .individual-articles .shift a {
     display: inline-block;
-    
-    
   }
 
   .individual-articles .shift a h4 {
     text-align: center;
-    
   }
   .individual-articles .shift .quote {
     text-align: center;
@@ -502,7 +511,7 @@ header {
     text-align: center;
   }
 
-  #footer-section .footer-right{
+  #footer-section .footer-right {
     text-align: center;
   }
 
@@ -511,7 +520,7 @@ header {
     margin-bottom: 10px;
     text-align: center;
     padding: 10px 30px;
-    font-size: 20px;
+    font-size: 19px;
     border-radius: 25px;
   }
 }
