@@ -258,6 +258,11 @@ header {
   margin-bottom: 2rem;
 }
 
+.individual-articles .shift{
+  box-shadow: 6px 6px 27px -6px rgba(245,238,238,0.33);
+  width: 100%;
+  background-color:  hsl(0, 0%, 100%);
+}
 /* FOOTER SECTION */
 
 #footer {
@@ -365,6 +370,50 @@ header {
     line-height: 1.4em;
     text-align: left;
   }
+
+  /* footer corrected */
+  #footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+    max-width: 400px;
+  }
+
+  #footer-section .footer-left {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+  }
+
+  #footer-section .icons a i {
+    font-size: 25px;
+  }
+
+  #footer-section .footer-center a {
+    display: block;
+    text-align: center;
+  }
+
+  #footer-section .footer-center1 a {
+    display: block;
+    text-align: center;
+  }
+
+  #footer-section .footer-right {
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 19px;
+    border-radius: 25px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -397,6 +446,10 @@ header {
     background-repeat: no-repeat;
     background-position: 10px -100px, -100px -350px;
     background-size: 300px, 800px;
+  }
+
+  .hero-right{
+    max-width: 400px;
   }
 
   .hero-right h2 {
@@ -440,6 +493,7 @@ header {
   .easybank-section-card {
     width: 400px;
   }
+  
   .easybank-section-card h4 {
     text-align: center;
   }
@@ -447,6 +501,8 @@ header {
   .easybank-section-card p {
     text-align: center;
     line-height: 1.5em;
+    margin: 0 auto;
+    width: 400px;
   }
 
   /* Latest article section */
@@ -481,46 +537,5 @@ header {
   }
 
   /* footer section */
-  #footer-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    grid-gap: 2rem;
-    max-width: 400px;
-  }
 
-  #footer-section .footer-left {
-    text-align: center;
-    display: block;
-    margin-top: 5px;
-  }
-
-  #footer-section .icons a i {
-    font-size: 25px;
-  }
-
-  #footer-section .footer-center a {
-    display: block;
-    text-align: center;
-  }
-
-  #footer-section .footer-center1 a {
-    display: block;
-    text-align: center;
-  }
-
-  #footer-section .footer-right {
-    text-align: center;
-  }
-
-  .footer-right a {
-    margin-left: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 10px 30px;
-    font-size: 19px;
-    border-radius: 25px;
-  }
 }
